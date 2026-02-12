@@ -1,0 +1,8 @@
+batch_size: 32
+epochs: 50
+learning_rate: 0.001
+distribution:
+  strategy: "Mirrored"
+  devices:
+    - "GPU:0"
+    - "GPU:1"
